@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Keyword Detector</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Website Title -->
+    <div class="container">
+        <h2 class='container-heading'><span>Keyword Detector</span></h2>
+        <div class='description'>
+            <p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+    <!-- Text Area -->
+    <div class="ml-container">
+        <form action="{{ url_for('predict') }}" method="POST">
+            <fieldset data-role="controlgroup">
+            <legend>Choose a mode:</legend> -->
+            <!-- <input type="radio" id="manual" name="message" value="select to manually enter message">
+            <label for="manual">select to enter message</label><br>
+            <input type="radio" id="upload" name="message" value="select to upload dataset">
+            <label for="upload">select to upload dataset</label><br> -->
+            <!-- <textarea class='message-box' name="message" rows="15" cols="75"
+                placeholder="Enter Your Message Here..."></textarea><br /> -->
+             </fieldset>
+            <input type="submit" class="my-cta-button" value="Predict">
+        </form>
+       
+    </div>
+
+</body>
+
+</html>
